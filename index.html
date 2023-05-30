@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globo</title>
+    <link rel="icon" href="leon.ico">
+</head>
+
+<body>
+    <!-- Creamos un elemento header con la clase "encabezado" que contendrá el logo y el input de búsqueda -->
+    <header class="encabezado">
+        <div class="logo">
+            <!-- Creamos un contenedor para el logo dentro del encabezado -->
+            <img src="imagenes/Qx8uR89 - Imgur.png" alt="Logo">
+            <!-- Insertamos el logo dentro del contenedor del logo -->
+        </div>
+
+        <div class="Usuario_Recibido">
+            <!-- Creamos un contenedor para el input que recibirá el nombre de usuario -->
+            <!-- Creamos el atributo "placeholder" para guiar al usuario sobre el funcionamiento de este input -->
+            <input type="text" placeholder="Ingresa tu usuario.." id="usuarioIngresado">
+        </div>
+    </header>
+    <section id="informacion">
+        <div class="info-contenedor">
+            <div class="Jane-Doe">
+                <img src="imagenes/99qgQJy - Imgur.jpg">
+            </div>
+        </div>
+        <div class="info-Jane">
+            <p class="nombre"><strong>Jane Doe</strong></p>
+            <p><strong>Email</strong>: jane_doe@email.com</p>
+            <p><strong>Fecha de nacimiento</strong>: 01/05/1996</p>
+            <p><strong>Teléfono</strong>: 918-936-9585</p>
+            <p><strong>Ciudad</strong>: Tokyo, Japón</p>
+            <p class="Lawn">Trabajando en <strong class="Lawn">Lawn N</strong></p>
+        </div>
+        <div>
+            <button id="seguir">Seguir</button>
+        </div>
+    </section>
+    <section id="Sobre-Mi">
+        <div class="sobreMi-contenedor">
+            <div class="sobremi">Sobre mí
+                <div>
+                    <p class="contenido"> ¡Hola a todos! Soy Jane, y actualmente</p>
+                    <p class="contenido">vivo en la vibrante y emocionante</p>
+                    <p class="contenido">ciudad de Tokyo, Japón. Me encanta</p>
+                    <p class="contenido">capturar la escencia de la vida urbana a</p>
+                    <p class="contenido">través de mi lente, explorando el</p>
+                    <p class="contenido">contraste entre la arquitectura</p>
+                    <p class="contenido">moderna y las tradiciones centenarias</p>
+                    <p class="contenido">capturar la escencia de la vida urbana a</p>
+                    <p class="contenido">que conviven en esta metrópolis</p>
+                    <p class="contenido">única. Desde rascacielos</p>
+                    <p class="contenido">deslumbrantes y calles bulliciosas</p>
+                    <p class="contenido">hasta templos serenos y jardines</p>
+                    <p class="contenido">tranquilos, encuentro inspiración en</p>
+                    <p class="contenido">cada rincón de esta increíble ciudad.</p>
+                </div>
+            </div>
+    </section>
+    <section class="publicacion">
+        <p class="publicado">Publicado hace 1 semana</p>
+            <img src="imagenes/bq9db41 - Imgur.jpg" alt="" class="imag-public"></div>
+        <div class="mg">
+            <button id="MeGusta">Me Gusta</button>
+            <span id="cantidadLikes"><strong>200</strong></span>
+        </div>
+
+        <div class="comentarios">
+            <h3>Comentarios</h3>
+            <p class="comentario"><strong class="nombre2">Juan Perez: </strong> ¡Wow, esta foto de Tokio es Impresionante!&#127750;&#10024;</p>
+            <p class="comentario"><strong class="nombre2">Kathleen J Rennie: </strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+        </div>
+            <form class="inp-comentarios">
+            <input type="text" placeholder="Deja tu comentario..." id="comentarioEnviado">
+            <button id="btnEnviar">Comentar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Librería de Java para alertas-->
+
+</body>
+
+</html>

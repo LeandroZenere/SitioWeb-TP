@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;0,900;1,500&family=Poppins:wght@700&display=swap');
+/* Quitamos el margen y el padding por defecto del body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3b0b0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Lawn {
+    color: grey;
+}
+
+/* Creamos una clase para el encabezado, que tendrá un display de grid para utilizar CSS Grid Layout */
+.encabezado {
+    display: grid;
+    /* Le indicamos al grid que tendrá 2 columnas de igual ancho */
+    grid-template-columns: 1fr 1fr;
+    /* Establecemos el color de fondo del encabezado */
+    background-color: #2196F3;
+    /* Centramos verticalmente los elementos del encabezado */
+    align-items: center;
+    height: 60px;
+}
+
+/* Creamos una clase para el contenedor del logo, que tendrá un display de flex para centrar verticalmente el logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Colocamos el contenido del contenedor en el inicio de la primera columna */
+    justify-self: start;
+}
+
+/* Le damos un ancho del 50% al logo para que se ajuste al ancho del contenedor */
+.logo img {
+    width: 50%;
+}
+
+
+/* Creamos una clase para el contenedor del input, que tendrá un display de flex para centrar verticalmente el input */
+.Usuario_Recibido {
+    display: inline-block;
+    border: 2px solid #2196F3;
+    align-items: center;
+    justify-content: center;
+    padding-right: 13.2%;
+    /* Colocamos el contenido del contenedor en el final de la segunda columna */
+    justify-self: end;
+}
+
+.Usuario_Recibido input {
+    padding: 2%;
+    /*Establecemos un padding para el input para darle espacio interno */
+    border: 5px solid white;
+    /* Color y tamaño del borde */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    background-color: white;
+    /* Color de fondo */
+    color: #2196F3;
+    /* Color de letra */
+}
+
+
+/* Eliminar los bordes blancos y negros que aparecen al hacer clic sobre el input */
+.Usuario_Recibido input:focus {
+    outline: none;
+}
+
+
+/* Cambiamos el color del texto del placeholder a celeste, alineamos el texto al centro y le damos tamaño. */
+.Usuario_Recibido input::placeholder {
+    color: #2196F3;
+    font-size: 12.5px;
+    font-weight: ExtraLight 200;
+    text-align: left;
+}
+
+
+/* CAJAS DE LOS 3 CONTENEDORES (INFO. BASICA-SOBRE MI-PUBLICACIÓN */
+#informacion {
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: Bold 700;
+}
+
+.info-contendor {
+    display: flex;
+    align-items: center;
+}
+
+.nombre {
+    font-size: 40px;
+    font-family: Bold 700;
+}
+
+.Jane-Doe img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+    padding: 5px;
+    margin-left: 30px;
+    max-width: 100%;
+}
+
+.info-Jane {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.01;
+    padding: 5px;
+}
+
+#seguir {
+    position: absolute;
+    right: 200px;
+    margin: auto;
+    padding: 13px;
+    margin-top: 40px;
+    background: #2196F3;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    top: 300px
+}
+
+
+/* ---------------------------------------- */
+
+#Sobre-Mi {
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 120px;
+    margin-top: 60px;
+    padding: 15px;
+    width: 270px;
+    float: right;
+}
+
+.sobreMi-contenedor {
+    align-items: left;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    width: 290px;
+}
+
+.sobremi {
+    color: grey;
+    font-size: 30px;
+    font-family: Bold 700;
+    line-height: 2;
+}
+
+.sobreMi-contenedor p {
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 0.2;
+    align-items: center;
+    text-align: left;
+}
+
+
+/* ----------------------------------------------- */
+
+.publicacion {
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 120px;
+    margin-top: 60px;
+    padding: 15px;
+    width: 750px;
+    height: 1000px;
+    float: left;
+}
+
+.imag-public {
+    width: 700px;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 100%;
+    margin: 15px;
+    margin-top: 0px;
+}
+
+.publicado {
+    text-align: start;
+    margin-left: 25px;
+}
+
+.mg {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 125px;
+}
+
+#MeGusta {
+    background: #cfcfcf;
+    border: none;
+    border-radius: 7px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #2196F3;
+}
+
+
+.comentario {
+    padding-top: 10px;
+}
+
+.inpUsuario {
+    padding-top: 40px;
+    font-size: 10px;
+}
+
+.inp-comentarios {
+    margin: 2.5rem 0 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+}
+
+.inp-comentarios input {
+    background: #cfcfcf;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    height: 2rem;
+}
+
+#btnEnviar {
+    background: #2196F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+#btnEnviar:hover {
+    background: #2196F3;
+    transition: 0.3s;
+}
+
+.nombre2 {
+    font-size: 15px;
+    font-family: Bold 700;
+}
+
+
+.comentarios {
+    width: 85%;
+    margin: 2.5rem 0 0 5rem;
+    position: relative;
+}
+
+.eliminar-btn {   
+    background-color: #cf0000be;
+    color: hsla(0, 0%, 97%, 0.726);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
